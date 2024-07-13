@@ -10,7 +10,6 @@ const fetch_vectors = async (vec) => {
 			topK: 5,
 			includeValues: true,
 		});
-		console.log(queryResponse.matches);
 		return queryResponse.matches;
 	} catch (error) {
 		return error;

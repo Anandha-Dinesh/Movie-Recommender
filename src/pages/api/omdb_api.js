@@ -4,7 +4,7 @@ dotenv.config();
 
 export async function omdb_api(movie) {
 	try {
-		let URL = `http://www.omdbapi.com/?t=${encodeURIComponent(movie).replace(
+		let URL = `https://www.omdbapi.com/?t=${encodeURIComponent(movie).replace(
 			/%20/g,
 			"+"
 		)}&plot=full&apikey=${process.env.NEXT_PUBLIC_OMDB_API_KEY}`;

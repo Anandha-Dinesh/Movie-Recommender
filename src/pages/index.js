@@ -12,7 +12,6 @@ export default function Home() {
 	const handleSubmit = async (event) => {
 		event.preventDefault();
 		const movies = await omdb_api(inputValue);
-		console.log(movies);
 		const reqMovie =
 			movies.Title +
 			" " +
